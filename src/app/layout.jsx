@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "./globals.css";
+import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 
 export const metadata = {
   title: "EcoRide - Recherche ton trajet",
@@ -10,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body>
-        {" "}
+        
         <header>
           <nav className="py-5 px-2 flex justify-between border-b-2 ">
             <div>
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
           </nav>
         </header>
         {children}
+        <AnimatedGridPattern/>
       </body>
     </html>
   );
