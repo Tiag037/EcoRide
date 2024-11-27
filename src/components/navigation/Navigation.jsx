@@ -6,6 +6,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
+import { Button } from "../ui/button";
 export default function Navigation() {
   return (
     <NavigationMenu>
