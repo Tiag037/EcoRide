@@ -2,7 +2,7 @@ import Link from "next/link";
 import "./globals.css";
 import Navigation from "@/components/navigation/Navigation";
 import { Button } from "@/components/ui/button";
-import { User } from "lucide-react";
+import { NotebookPen, User } from "lucide-react";
 
 export const metadata = {
   title: "EcoRide - Recherche ton trajet",
@@ -12,23 +12,30 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body className="min-h-screen">
+      <body>
         <header>
-          <nav className="py-5 px-2 flex justify-between border-b-2 ">
+          <nav className="py-2 px-2 flex justify-between ">
             <div>
               <Link href={"/"}>logo</Link>
             </div>
-            <Navigation />
+
             <div className="flex gap-1">
-              <Button variant="outline"><User />Connexion</Button>
-              <Button>Inscription</Button>
-              
+              <Navigation/>
+              <Button variant="secondary">
+                <User />
+                Connexion
+              </Button>
+              <Button>
+                <NotebookPen />
+                Inscription
+              </Button>
             </div>
           </nav>
         </header>
-        {children}
+        <main className="min-h-80">{children}</main>
+
         <footer>
-          <h3 className="border-t-2">footer</h3>
+          <h3>footer</h3>
         </footer>
       </body>
     </html>
