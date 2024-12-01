@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body>
+      <body className="bg-[#ecfdf5]/10">
         <header>
           <nav className="py-2 px-2 flex justify-between ">
             <div>
@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
 
         <footer>
           <h3>footer</h3>
+          <a href="https://storyset.com/nature">Nature illustrations by Storyset</a>
         </footer>
       </body>
     </html>
