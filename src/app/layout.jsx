@@ -37,6 +37,7 @@ export default function RootLayout({ children }) {
         <footer>
           <h3>footer</h3>
           <a href="https://storyset.com/nature">Nature illustrations by Storyset</a>
+          <a href="https://lordicon.com/">Icons by Lordicon.com</a>
         </footer>
       </body>
     </html>
