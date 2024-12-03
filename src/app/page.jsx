@@ -1,4 +1,4 @@
-import DatePicker from "@/components/datePicker/DatePicker";
+import DatePicker from "@/components/ui/DatePicker";
 import BlurIn from "@/components/ui/blur-in";
 import { Input } from "@/components/ui/input";
 import LetterPullup from "@/components/ui/letter-pullup";
@@ -31,19 +31,15 @@ export default function Page() {
           <DatePicker />
         </div>
       </section>
-      <section className="min-h-16">
-        <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
+      <section className="min-h-16 flex">
+        <div className=" max-w-lg items-center justify-center overflow-hidden">
           <BoxReveal boxColor={"#1f7551"} duration={0.5}>
             <p className="text-[3.5rem] font-semibold">
-              Un trajet pour l'avenir<span className="text-[#1f7551]">.</span>
+              Un trajet pour demain<span className="text-[#1f7551]">.</span>
             </p>
           </BoxReveal>
-          
-
-          <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-            <Button className="mt-[1.6rem] bg-[#5046e6]">Explore</Button>
-          </BoxReveal>
         </div>
+        
       </section>
     </div>
   );
