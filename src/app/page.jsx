@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import LetterPullup from "@/components/ui/letter-pullup";
 import { Spotlight } from "@/components/ui/spotlight";
 import BoxReveal from "@/components/ui/box-reveal";
-import { Button } from "@/components/ui/button";
+import CarouselPictures from "@/components/carousel/CarouselPictures";
 
 export default function Page() {
   return (
@@ -31,15 +31,17 @@ export default function Page() {
           <DatePicker />
         </div>
       </section>
-      <section className="min-h-16 flex">
-        <div className=" max-w-lg items-center justify-center overflow-hidden">
+      <section className="flex items-center w-full  mt-24">
+        <div className="max-w-lg items-center justify-center overflow-hidden">
           <BoxReveal boxColor={"#1f7551"} duration={0.5}>
             <p className="text-[3.5rem] font-semibold">
               Un trajet pour demain<span className="text-[#1f7551]">.</span>
             </p>
           </BoxReveal>
         </div>
-        
+        <div>
+          <CarouselPictures />
+        </div>
       </section>
     </div>
   );
