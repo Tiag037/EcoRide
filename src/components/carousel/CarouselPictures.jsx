@@ -12,7 +12,6 @@ export default function CarouselPictures() {
   return (
     <Carousel
       orientation="vertical"
-      className=" "
       plugins={[
         Autoplay({
           delay: 3000,

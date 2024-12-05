@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
         </header>
         <main className="min-h-80">{children}</main>
 
-        <footer>
+        <footer className="mt-12 border-t-2">
           <h3>footer</h3>
           <a href="https://storyset.com/nature">
             Nature illustrations by Storyset
