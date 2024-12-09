@@ -5,6 +5,7 @@ import LetterPullup from "@/components/ui/letter-pullup";
 import { Spotlight } from "@/components/ui/spotlight";
 import BoxReveal from "@/components/ui/box-reveal";
 import CarouselPictures from "@/components/carousel/CarouselPictures";
+import { Button } from "@/components/ui/button";
 export default function Page() {
   return (
     <div className=" min-h-screen">
@@ -27,20 +28,23 @@ export default function Page() {
             placeholder="Destination"
             className="text-center"
           />
-          <DatePicker />
+          <DatePicker/>
+          <Button>
+            Rechercher
+          </Button>
         </div>
       </section>
-      <section className="flex items-center w-full  mt-24 justify-around">
-        <div className="max-w-xl  items-center justify-center overflow-hidden p-5">
+      <section className="flex  items-center w-full  mt-24 justify-around">
+        <div className="w-1/2  items-center justify-center overflow-hidden p-5">
           <BoxReveal boxColor={"#1f7551"} duration={0.5}>
-            <h3 className="text-[3.5rem] font-semibold">
+            <h3 className="text-7xl font-semibold mb-4">
               Un trajet pour demain<span className="text-[#1f7551]">.</span>
             </h3>
           </BoxReveal>
       
           <p className="text-primary font-bold">Rejoignez le mouvement écologique avec notre application de covoiturage! Réduisez vos émissions de CO₂ tout en partageant vos trajets avec d'autres voyageurs responsables. Simplifiez vos déplacements, économisez de l'argent, et contribuez à un avenir plus vert. Ensemble, faisons du covoiturage une solution durable et conviviale pour tous !</p>
         </div>
-        <div>
+        <div className="w-1/2">
           <CarouselPictures />
         </div>
       </section>
